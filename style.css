@@ -140,14 +140,25 @@ button:active{
      font-family: calibri;
      background-color: #262525;
 }
+<<<<<<< HEAD
   /*---FOOTER---*/
+=======
+>>>>>>> d63c51ec15342d896c828e376d9443868835665a
 .inner-foot{
 	margin: 0;
 	padding: 0;
 	background-color: #272727;
 }
+<<<<<<< HEAD
 .social-links ul{
 	padding: 40px;
+=======
+.social-links{
+	display: flex;
+}
+.social-links ul{
+	padding: 50px;
+>>>>>>> d63c51ec15342d896c828e376d9443868835665a
 	display: flex;
 	width: 300px;
 	height: 30px;
@@ -166,11 +177,16 @@ button:active{
 	color: #5db3ad;
 }
 .outer-foot{
+<<<<<<< HEAD
 	padding: 10px;
+=======
+	padding: 15px;
+>>>>>>> d63c51ec15342d896c828e376d9443868835665a
 	text-align: center;
 	color: white;
 	font-size: 18px;
 	background-color: #3f3f3f;
+<<<<<<< HEAD
 }
 
 /*====PORTFOLIO====*/
@@ -240,4 +256,6 @@ button:active{
 	cursor: pointer;
 	margin-top: 8px;
 	width: 100%;
+=======
+>>>>>>> d63c51ec15342d896c828e376d9443868835665a
 }
