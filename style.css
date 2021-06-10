@@ -3,7 +3,7 @@ body{
 	padding: 0;
 	box-sizing: border-box;
 }
-section{
+.sec{
 	width: 100%;
 	height: 95vh;
 	background-image: url(img6.jpg);
@@ -140,7 +140,9 @@ button:active{
      font-family: calibri;
      background-color: #262525;
 }
-   /*--FOOTER---*/
+
+  /*---FOOTER---*/
+
 .inner-foot{
 	margin: 0;
 	padding: 0;
@@ -156,13 +158,13 @@ button:active{
 	height: 30px;
 	margin: auto;
 }
-
 .social-items{
 	list-style: none;
 }
 .social-items a{
 	padding: 10px 20px;
 	font-size: 35px;
+
 	color: white; 
 	transition: all .25s;
 }
@@ -170,6 +172,17 @@ button:active{
 	color: #6cccc6;
 }
 .outer-foot{
+
+	color: white;
+	transition: all .25s;
+}
+.social-items a:hover{
+	color: #5db3ad;
+}
+.outer-foot{
+	padding: 10px;
+
+
 	padding: 15px;
 	text-align: center;
 	color: white;
@@ -244,6 +257,7 @@ button:active{
 	cursor: pointer;
 	margin-top: 8px;
 	width: 100%;
+
 }
 
 /*-----CV____*/
