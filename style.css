@@ -1,15 +1,17 @@
+
 body{
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 .sec{
-	width: 100%;
+	width: 98.5vw;
 	height: 95vh;
-	background-image: url(img6.jpg);
+	background-image: url(img0.jpg);
 	background-repeat: no-repeat;
-  background-size: cover;
+   background-position: right top;  
 }
+
 
 /* Navbar */
 .navbar{
@@ -17,13 +19,16 @@ body{
 	justify-content: center;
 	align-items: center;
 	background-color: rgba(0, 0, 0, 0.5);
+	color: white;
+	font-weight: bold;
 	position: sticky;
 	top: 0;
+	transition: top 0.3s;
 }
 .navbar ul{
 	display: flex;
 	list-style: none;
-	margin: 20px 0px;
+	margin: 30px 0px;
 }
 .navbar ul li{
 	font-family: century;
@@ -41,6 +46,16 @@ body{
 	color: black;
 	box-shadow: 0 0 10px white;
 }
+
+
+@media (max-width: 800px){
+ 
+ 
+}
+
+
+
+/*----body----*/
 .main p:nth-child(1){
 	font-family: calibri;
 	font-weight: bold;
@@ -67,8 +82,8 @@ body{
 .main{
 	position: absolute;
 	left: 13%;
-	top: 45%;
-	transform: translate(-13%,-45%);
+	top: 30%;
+	transform: translate(-13%,-30%);
 }
 .main button{
 	width: 130px;
@@ -85,28 +100,22 @@ body{
 button:active{
 	transform: scale(1.1);
 }
-.model{
-	height: 580px;
-	width: 550px;
-	position: absolute;
-	bottom: 0px;
-	left: 97%;
-	transform: translateX(-89%);
-}
 .container{
-	width: 80%;
+	width: 70%;
 	height: 330px;
 	background-color: #ffffff;
 	border-radius: 20px;
 	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
 	display: flex;
-	margin: -7% auto 20px auto;
+	margin: -15% auto 50px auto;
 	position: relative;
 	justify-content: space-evenly;
 	align-items: center;
+
 }
 .container img{
 	height: 250px;
+	border-radius: 50%;
 }
 .text{
 	width: 550px;
@@ -141,8 +150,9 @@ button:active{
      background-color: #262525;
 }
 
-  /*---FOOTER---*/
 
+
+  /*---FOOTER---*/
 .inner-foot{
 	margin: 0;
 	padding: 0;
@@ -164,7 +174,6 @@ button:active{
 .social-items a{
 	padding: 10px 20px;
 	font-size: 35px;
-
 	color: white; 
 	transition: all .25s;
 }
@@ -172,9 +181,8 @@ button:active{
 	color: #6cccc6;
 }
 .outer-foot{
-
-	color: white;
-	transition: all .25s;
+color: white;
+transition: all .25s;
 }
 .social-items a:hover{
 	color: #5db3ad;
@@ -185,6 +193,9 @@ button:active{
 	color: white;
 	font-size: 18px;
 	background-color: #3f3f3f;
+}
+@media screen and (max-width: 880px){
+  
 }
 
 /*====PORTFOLIO====*/
@@ -310,6 +321,15 @@ p{
 	margin-top: 8px;
 	width: 100%;
 
+}
+@media screen and (max-width: 700px){
+	.contact{
+		max-width: 100%;
+	}
+	.txtb{
+		width: 100%;
+		margin-top: 0;
+	}
 }
 
 /*-----CV____*/
@@ -453,7 +473,7 @@ body{
 
 .resume_wrapper .resume_right .resume_data .content{
 	padding-left: 35px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 	width: calc(100% - 115px);
 }
 
@@ -538,4 +558,30 @@ body{
 	.resume_wrapper .resume_right .resmue_interests .interests .int_icon{
 		font-size: 24px;
 	}
+}
+/*----sitereport---*/
+.site{
+	text-align: center;
+	font-size: 4vw;
+	font-weight: bold;
+	padding: 40px;
+
+}
+.image1{
+	height: 400px;
+	width: 40%;
+}
+@media screen and (max-width: 800px) {
+  .image1 {
+    max-width: 100%;
+    height: auto;
+  }
+  .site{
+  	font-size: 30px ;
+  }
+}
+@media screen and (max-width: 600px) {
+.site{
+  	font-size: 20px ;
+  }
 }
