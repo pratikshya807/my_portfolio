@@ -14,6 +14,8 @@ body{
    background-position: right top;  
 }
 
+ 
+
 /* Navbar */
 nav{
 	background-color: gray;
@@ -197,6 +199,12 @@ button:active{
      font-family: calibri;
      background-color: #262525;
 }
+@media screen and (max-width: 600px){
+	.main p:nth-child(1){
+	font-size: 10px;
+}
+}
+
 
 
 
