@@ -1,7 +1,7 @@
 
 
 .body{
-	background-image: url(img4.jpg);
+	background-image: url(img4.jpg) ;
 
 }
 
@@ -14,72 +14,72 @@
  
 
 /* Navbar */
-.nav {
+nav {
 	height: 50px;
 	width: 100%;
 	background-color: black;
 	position: relative;
   }
   
-  .nav > .nav-header {
+ nav > .nav-header {
 	display: inline;
   }
   
-  .nav > .nav-header > .nav-title {
+  nav > .nav-header > .nav-title {
 	display: inline-block;
 	font-size: 22px;
 	color: #fff;
 	padding: 10px 10px 10px 10px;
   }
   
-  .nav > .nav-btn {
+  nav > .nav-btn {
 	display: none;
   }
   
-  .nav > .nav-links {
+  nav > .nav-links {
 	display: inline;
 	float: right;
 	font-size: 18px;
   }
   
-  .nav > .nav-links > a {
+  nav > .nav-links > a {
 	display: inline-block;
 	padding: 13px 10px 13px 10px;
 	text-decoration: none;
 	color: #efefef;
   }
   
-  .nav > .nav-links > a:hover {
+  nav > .nav-links > a:hover {
 	background-color: rgba(0, 0, 0, 0.3);
   }
   
-  .nav > #nav-check {
+  nav > #nav-check {
 	display: none;
   }
   
   @media (max-width:600px) {
-	.nav > .nav-btn {
+	nav > .nav-btn {
 	  display: inline-block;
 	  position: absolute;
 	  right: 0px;
 	  top: 0px;
 	}
-	.nav > .nav-btn > label {
+	nav > .nav-btn > label {
 	  display: inline-block;
 	  width: 50px;
 	  height: 50px;
 	  padding: 13px;
 	}
-	.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+	nav > .nav-btn > label:hover,nav  #nav-check:checked ~ .nav-btn > label {
 	  background-color: rgba(0, 0, 0, 0.3);
 	}
-	.nav > .nav-btn > label > span {
+	nav > .nav-btn > label > span {
 	  display: block;
 	  width: 25px;
 	  height: 10px;
 	  border-top: 2px solid #eee;
 	}
-	.nav > .nav-links {
+	nav > .nav-links {
 	  position: absolute;
 	  display: block;
 	  width: 100%;
@@ -90,14 +90,14 @@
 	  top: 50px;
 	  left: 0px;
 	}
-	.nav > .nav-links > a {
+	nav > .nav-links > a {
 	  display: block;
 	  width: 100%;
 	}
-	.nav > #nav-check:not(:checked) ~ .nav-links {
+	nav > #nav-check:not(:checked) ~ .nav-links {
 	  height: 0px;
 	}
-	.nav > #nav-check:checked ~ .nav-links {
+	nav > #nav-check:checked ~ .nav-links {
 	  height: calc(100vh - 50px);
 	  overflow-y: auto;
 	}
@@ -129,7 +129,7 @@
 	font-size: 26px;
 }
 .intro p:nth-child(3){
-	font-family: myriad pro regular;
+	font-family: "myriad pro regular";
 	color: white;
 	font-size: 15px;
 	line-height: 10px;
@@ -137,8 +137,8 @@
 
 
 .container{
-	width: 90%;
-	height: 400px;
+	width: 85%;
+	height: 350px;
 	background-color: dimgray;
 	border-radius: 20px;
 	box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
@@ -147,6 +147,8 @@
 	position: relative;
 	justify-content: space-evenly;
 	align-items: center;
+  max-width: 100%;
+  height: auto;
 
 }
 .container img{
@@ -158,7 +160,7 @@
 }
 .text p:nth-child(1){
 	color: black;
-	font-family: myriad pro;
+	font-family: "myriad pro";
 	font-weight: bold;
 	font-size: 23px;
 	line-height: 40px;
@@ -166,7 +168,7 @@
 .text p:nth-child(2){
 	color: black;
 	font-size: 15px;
-	font-family: myriad pro;
+	font-family: "myriad pro";
 	font-weight: bold;
 	line-height: 10px;
 }
@@ -177,18 +179,11 @@
 	font-size: 16px;
 }
 .text button{
-     width: 120px;
-     height: 40px;
+     width: 90px;
+     height: 30px;
      color: #FFFFFF;
-     outline: none;
-     border-radius: none;
      font-family: calibri;
      background-color: #262525;
-}
-@media screen and (max-width: 700px){
-.intro p {
-	font-size: 10px;
-}
 }
 
   /*---FOOTER---*/
@@ -243,7 +238,7 @@ transition: all .25s;
 
 /*====PORTFOLIO====*/
 .portfolio-section{
-	padding: 5px;
+	padding: 3px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -251,6 +246,7 @@ transition: all .25s;
 .section-title{
 	font-size: 30px;
 	text-transform: uppercase;
+	color: black;
 	margin-bottom: 3rem;
 	border-bottom: 0.2rem solid #333;
 	text-shadow: 0.2rem 0.2rem 0.5rem #555 ;
@@ -272,10 +268,10 @@ transition: all .25s;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-    margin-left: 120px;
+  margin-left: 80px;
 	border-radius:60%;
 	height: 60vh;
-	padding-top: 20px;
+	padding-top: 30px;
 	
 }
 
@@ -295,7 +291,9 @@ p{
 	color: white;
 }
 .portfolio_img img{
-	border-radius: 5rem;
+	border-radius: 1rem;
+	max-width: 100%;
+	height: auto;
 	height: 350px;
 	width: 350px;
 }
@@ -317,9 +315,7 @@ p{
 }
 .portfolio_link-name{
 	color: var(--dark-color);
-}
-
-
+} 
 
 
 /*CONTACT*/
@@ -332,12 +328,12 @@ p{
 }
 .border{
 	width: 100px;
-	height: 10px;
+	height: 5px;
 	background: #34495e;
-	margin: 40px auto;
+	margin: 20px auto;
 }
 .contact-form{
-	max-width: 600px;
+	max-width: 700px;
 	margin: auto;
 	padding: 0 10px;
 	overflow: hidden;
@@ -369,7 +365,7 @@ textarea .contact-form-text{
 	padding: 12px 50px;
 	border-radius: 20px;
 	cursor: pointer;
-	transition: 0,5s;
+	transition: 0.5s;
 }
 .contact-form-btn:hover{
 	background: #2980b9;
@@ -389,7 +385,7 @@ textarea .contact-form-text{
 
 .resume_wrapper{
 	display: flex;
-	width: 800px;
+	width: 750px;
 	margin: 50px auto;
 	background: #fff;
 	padding: 10px;
@@ -516,6 +512,10 @@ textarea .contact-form-text{
 	padding-left: 35px;
 	margin-bottom: 40px;
 	width: calc(100% - 115px);
+
+}
+.content p{
+	color: black;
 }
 
 .resume_wrapper .resume_right .resume_data .year:before{
@@ -612,21 +612,30 @@ textarea .contact-form-text{
 	padding: 40px;
 
 }
+.report h1{
+	text-align: center;
+	font-size: 35px;
+}
 .image1{
+	height: 300px;
+	width: 30%;
+}
+h2{
+  color: darkblue;
+	text-align: center;
+}
+li{
+	color: white;
+	font-size: 20px;
+}
+ul {
+  padding-left: 40px;
+}
+.image2{
 	height: 400px;
-	width: 40%;
-}
-@media screen and (max-width: 800px) {
-  .image1 {
-    max-width: 100%;
-    height: auto;
-  }
-  .site{
-  	font-size: 30px ;
-  }
-}
-@media screen and (max-width: 600px) {
-.site{
-  	font-size: 20px ;
-  }
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  margin-left: 350px;
+	padding-top: 30px;
 }
