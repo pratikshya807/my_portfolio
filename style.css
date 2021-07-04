@@ -2,7 +2,7 @@
 
 .body{
 	background-image: url(img4.jpg) ;
-
+	Photo by Josh Rose on Unsplash, n.d.
 }
 
 
@@ -615,6 +615,7 @@ textarea .contact-form-text{
 .report h1{
 	text-align: center;
 	font-size: 35px;
+	color: darkblue;
 }
 .image1{
 	height: 300px;
@@ -623,19 +624,26 @@ textarea .contact-form-text{
 h2{
   color: darkblue;
 	text-align: center;
+	
 }
 li{
 	color: white;
-	font-size: 20px;
+	font-size: 25px;
 }
 ul {
   padding-left: 40px;
 }
 .image2{
-	height: 400px;
+ justify-content: center;
+	text-align: center;
+	margin: auto;
 	display: flex;
-	justify-content: center;
-	align-items: center;
-  margin-left: 350px;
 	padding-top: 30px;
-}
+  width: 50%;
+  height: auto;
+ }
+ @media (max-width:600px) {
+  .report h1 {
+    font-size: 20px;
+  }  
+   
